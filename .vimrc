@@ -7,7 +7,7 @@ set nobackup
 set softtabstop=4
 set tabstop=4         "tab stop = 4      
 set shiftwidth=4      " << >>   = 4
-set expandtab
+"set expandtab
 set showcmd
 set showmatch       
 set ignorecase        " ignore case when search
