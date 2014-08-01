@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/whoknowwhat/project/barrel/template/AdminLTE-master/pages/examples'
+let g:netrw_dirhist_2='/home/whoknowwhat/project/barrel/assets/css/adminlte'
+let g:netrw_dirhist_3='/home/whoknowwhat/project/barrel/barrel/barrel'
+let g:netrw_dirhist_4='/home/whoknowwhat/project/barrel/barrel/tabula_glitches'
+let g:netrw_dirhist_5='/home/whoknowwhat/.virtualenvs/redips/lib/python2.6/site-packages/irc'
+let g:netrw_dirhist_6='/home/whoknowwhat/project/redips/redips'
+let g:netrw_dirhist_7='/home/whoknowwhat/project/barrel/template/redips'
