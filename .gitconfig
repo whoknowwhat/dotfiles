@@ -4,9 +4,13 @@
 [alias]
 	lol = log --oneline --graph --abbrev-commit --decorate
 	cm = commit --amend
-	al = add --all
+	al = add -A
 	co = checkout
 	cb = checkout -b
 	bd = branch -D
 	rh = reset --hard HEAD
 	st = status
+[push]
+	default = simple
+[core]
+	editor = vim
