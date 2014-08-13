@@ -5,10 +5,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Bundle 'Lokaltog/powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'klen/python-mode'
+Bundle 'bling/vim-airline'
 
 call vundle#end()
 
@@ -61,12 +61,12 @@ set wildmode=full             " <Tab> cycles between all matching choices.
 set nowrap
 set nobackup       
 set fileencodings=utf-8,euc-kr
+language ko_KR.UTF-8
 
 colorscheme molokai
 
 " don't bell or blink
 set noerrorbells
-set vb t_vb=
 
 " Ignore these files when completing
 set wildignore+=*.o,*.obj,.git,*.pyc
@@ -115,7 +115,6 @@ set showcmd                 " Show incomplete normal mode commands as I type.
 set report=0                " : commands always print changed line count.
 set shortmess+=a            " Use [+]/[RO]/[w] for modified/readonly/written.
 set ruler                   " Show some info, even without statuslines.
-"set statusline=%4*%m%3*%<%F%3*%=%5*\ Lines\ %3l\ Columns\ %c\ %p%%\ %4*%m
 set laststatus=2            " Always show statusline, even if only 1 window.
 
 """ Searching and Patterns
