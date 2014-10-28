@@ -14,6 +14,8 @@ LS_COLORS='rs=0:di=01;33:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38
 export LS_COLORS
 
 set -o vi
+export TERM=xterm-256color
+export LANG=ko_KR.UTF-8
 
 source ~/.git-completion.sh
 source ~/.git-prompt.sh
