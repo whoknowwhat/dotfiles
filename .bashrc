@@ -16,6 +16,8 @@ export LS_COLORS
 set -o vi
 export TERM=xterm-256color
 export LANG=ko_KR.UTF-8
+export EDITOR=vim
+alias vi='vim'
 
 source ~/.git-completion.sh
 source ~/.git-prompt.sh
