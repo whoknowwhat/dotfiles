@@ -9,6 +9,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'def-lkb/vimbufsync'
 
 " Python Plugins
 Bundle 'davidhalter/jedi-vim'
