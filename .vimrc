@@ -6,9 +6,21 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'bling/vim-airline'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" Python Plugins
 Bundle 'davidhalter/jedi-vim'
 Bundle 'klen/python-mode'
-Bundle 'bling/vim-airline'
+
+" Javascript Plugins
+Bundle 'moll/vim-node'
+Plugin 'jelera/vim-javascript-syntax'
+
+" Coq Plugins
+Plugin 'jvoorhis/coq.vim'
+Plugin 'the-lambda-church/coquille'
 
 call vundle#end()
 
@@ -33,18 +45,33 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+" easier moving of code blocks
+vnoremap < <gv
+vnoremap > >gv
+
+" better copy & paste
+set pastetoggle=<leader>p
+
+" easier moving
+nmap <leader>f <c-f>
+nmap <leader>b <c-b>
+
 " NerdTree
 map <F2> :NERDTreeToggle<CR>
 map <F3> :NERDTreeFind<CR>
 
 " Add breakpoint for pdb without python-mode
-"map <leader>b Oimport pdb; pdb.set_trace() ### XXX BREAKPOINT
+" map <leader>b Oimport pdb; pdb.set_trace() ### XXX BREAKPOINT
 
 " hide matches on <leader>space
 nnoremap <leader><space> :nohlsearch<CR>
 
+" save
+nmap <leader>w :w<CR>
+
 " quit
-nnoremap <leader>q :qa<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :qa!<CR>
 
 
 " ==========================================================
@@ -162,7 +189,7 @@ let g:pymode_virtualenv = 1
 
 " Enable breakpoints plugin
 let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_key = '<leader>b'
+let g:pymode_breakpoint_key = '∫'   " Alt + b
 
 " syntax highlighting
 let g:pymode_syntax = 1
@@ -173,3 +200,17 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
 
+" Remap jedi-vim auto completion command cause OS X's Spotlight
+let g:jedi#completions_command = "ç"    " Alt + c
+
+" airline powerline font symbols
+let g:airline_powerline_fonts = 1
+
+" =========================================================
+" Coq
+" =========================================================
+" Maps Coquille commands to <F2> (Undo), <F3> (Next), <F4> (ToCursor)
+autocmd FileType coq call coquille#FNMapping()
+" Set it to 'true' if you want Coquille to move your cursor to the end of the
+" lock zone after calls to CoqNext or CoqUndo
+let g:coquille_auto_move = 'true'
