@@ -1,5 +1,4 @@
 set nocompatible   
-filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -212,6 +211,12 @@ let g:airline_powerline_fonts = 1
 " =========================================================
 " Maps Coquille commands to <F2> (Undo), <F3> (Next), <F4> (ToCursor)
 autocmd FileType coq call coquille#FNMapping()
+autocmd FileType coq setlocal shiftwidth=2 tabstop=2 softtabstop=2
 " Set it to 'true' if you want Coquille to move your cursor to the end of the
 " lock zone after calls to CoqNext or CoqUndo
 let g:coquille_auto_move = 'true'
+
+" =========================================================
+" HTML
+" =========================================================
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
