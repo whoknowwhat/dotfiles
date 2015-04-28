@@ -68,6 +68,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 " save
 nmap <leader>w :w<CR>
+nmap <leader>ㅈ :w<CR>
 
 " quit
 nnoremap <leader>q :q<CR>
@@ -211,10 +212,14 @@ let g:airline_powerline_fonts = 1
 " =========================================================
 " Maps Coquille commands to <F2> (Undo), <F3> (Next), <F4> (ToCursor)
 autocmd FileType coq call coquille#FNMapping()
+map <buffer> <silent> <F5> :CoqLaunch<CR>
+map <buffer> <silent> <F6> :CoqKill<CR>
+imap <buffer> <silent> <F5> <ESC>:CoqLaunch<CR>
+imap <buffer> <silent> <F6> <ESC>:CoqKill<CR>
 autocmd FileType coq setlocal shiftwidth=2 tabstop=2 softtabstop=2
 " Set it to 'true' if you want Coquille to move your cursor to the end of the
 " lock zone after calls to CoqNext or CoqUndo
-let g:coquille_auto_move = 'true'
+"let g:coquille_auto_move = 'true'
 
 " =========================================================
 " HTML
