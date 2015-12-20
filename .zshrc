@@ -82,8 +82,10 @@ fi
 # Zsh Command-line editing Vim Key Binding
 # http://dougblack.io/words/zsh-vi-mode.html
 bindkey -v
+bindkey '\e[3~' delete-char
+bindkey '^R' history-incremental-search-backward
+set -K
 export KEYTIMEOUT=1
 
-export PATH=$PATH:/Users/whoknowwhat/Downloads/apache-maven-3.2.5/bin:/Users/whoknowwhat/project/scripts
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
