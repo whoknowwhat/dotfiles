@@ -10,6 +10,7 @@
 	bd = branch -D
 	rh = reset --hard HEAD
 	st = status
+    su = submodule update --recursive --remote
 [push]
 	default = simple
 [core]
