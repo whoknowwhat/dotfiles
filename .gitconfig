@@ -1,17 +1,14 @@
-[user]
-	name = eM
-	email = whoknowwhat0623@gmail.com
 [alias]
-	lol = log --oneline --graph --abbrev-commit --decorate
-	cm = commit --amend
-	al = add -A
-	co = checkout
-	cb = checkout -b
-	bd = branch -D
-	rh = reset --hard HEAD
-	st = status
+    lol = log --oneline --graph --abbrev-commit --decorate
+    cm = commit --amend
+    al = add -A
+    co = checkout
+    cb = checkout -b
+    bd = branch -D
+    rh = reset --hard HEAD
+    st = status
     su = submodule update --recursive --remote
 [push]
-	default = simple
+    default = simple
 [core]
-	editor = vim
+    editor = vim

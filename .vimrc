@@ -6,9 +6,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 "Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'def-lkb/vimbufsync'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"Plugin 'def-lkb/vimbufsync'
 
 
 " Python Plugins
@@ -16,15 +16,15 @@ Plugin 'def-lkb/vimbufsync'
 "Bundle 'klen/python-mode'
 
 " Javascript Plugins
-Bundle 'moll/vim-node'
-Plugin 'jelera/vim-javascript-syntax'
+"Bundle 'moll/vim-node'
+"Plugin 'jelera/vim-javascript-syntax'
 
 " Coq Plugins
-Plugin 'jvoorhis/coq.vim'
-Plugin 'the-lambda-church/coquille'
+"Plugin 'jvoorhis/coq.vim'
+"Plugin 'the-lambda-church/coquille'
 
 " Scala Plugins
-Plugin 'derekwyatt/vim-scala'
+"Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 
